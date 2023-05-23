@@ -17,9 +17,13 @@ body {
 }
 
 .urna {
-    background-color: #000;
+    background-color: #201f1f;
     padding: 30px;
     display: flex;
+    border: 1px solid rgba(255, 255, 0, 0.404);
+    box-shadow: 2px 2px 0px black;
+    border-radius: 5px;
+    margin-top: 5px;
 }
 
 .tela {
