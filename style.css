@@ -6,6 +6,9 @@
 
 
 body {
+    background-image: url(./imagens/bolsonaro-vs-lula.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     display: flex;
     justify-content: center;
