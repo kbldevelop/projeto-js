@@ -72,6 +72,10 @@ function atualizaInterface() {
 
 function clicou(n) {
     let elNumero = document.querySelector(`.numero.pisca`);
+    let snd = document.querySelector(`.snd`);
+    snd.play();
+
+
     if(elNumero !== null) {
         elNumero.innerHTML = n;
         numero = `${numero}${n}`;
@@ -86,6 +90,10 @@ function clicou(n) {
 }
 
 function branco() {
+    let snd = document.querySelector(`.snd`);
+    snd.play();
+
+
     if (numero === '') {
         votoBranco = true;
         seuVotoPara.style.display = 'block';
@@ -98,13 +106,23 @@ function branco() {
 }
 
 function corrige() {
+    let snd = document.querySelector(`.snd`);
+    snd.play();
     comecarEtapa();
 }
+
+
+
+
 
 function confirma() {
     let etapa = etapas[etapaAtual];
 
     let votoConfirmado = false;
+    let audio = document.querySelector(`.snd2`);
+    audio.play();
+    
+    
 
     if(votoBranco === true) {
         votoConfirmado = true;
